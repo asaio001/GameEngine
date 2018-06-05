@@ -11,7 +11,7 @@ All user interfaces are drawn onto a back buffer and then rendered onto the main
 public abstract void render(Graphics g, int timeElapsed);
 ```
 
-Which passes a reference to the back buffer's graphics handle along with a measure of how much time elpased since last call to render. The latter measure is useful for animated graphics, which can sync up animations with the FPS rate of the engine.
+Which passes a reference to the back buffer's graphics handle along with a measure of how much time elapsed since last call to render. The latter measure is useful for animated graphics, which can sync up animations with the FPS rate of the engine.
 
 ## Scripting
 Currently supports Javascript scripting with [Mozilla's Rhino](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino).
@@ -63,7 +63,7 @@ Example (taken from the Snake game built with this engine. See the "Sample usage
 ```
 
 ## Game logic
-Game logic processing happens after event handling and before rendering. This means that any game logic that should ne at par with rendering should happen here. The class that inherits from GameEngine has to implement:
+Game logic processing happens after event handling and before rendering. This means that any game logic that should be at par with rendering should happen here. The class that inherits from GameEngine has to implement:
 ```
 public void processGameLogic(int timeElapsed);
 ```
